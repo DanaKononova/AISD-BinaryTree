@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1280.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binaryTree.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="544.0" prefWidth="1240.0">
+         <children>
+            <Button fx:id="AddButton" layoutX="20.0" layoutY="70.0" mnemonicParsing="false" onAction="#onAddClick" prefHeight="25.0" prefWidth="101.0" text="Добавить узел" />
+            <TextField fx:id="TextF" layoutX="37.0" layoutY="34.0" prefHeight="25.0" prefWidth="66.0" />
+            <Button fx:id="SewButton" layoutX="2.0" layoutY="149.0" mnemonicParsing="false" onAction="#onSewButtonClick" prefHeight="51.0" prefWidth="136.0" text="Прошить дерево: симметрично справа" textOverrun="CLIP" wrapText="true" />
+            <Canvas fx:id="canvas" height="524.0" layoutX="117.0" width="1143.0" />
+            <Label fx:id="PramObh" layoutX="332.0" layoutY="438.0" prefHeight="20.0" prefWidth="1143.0" text="Прямой обход: " textFill="#770500">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="SimObh" layoutX="332.0" layoutY="465.0" prefHeight="20.0" prefWidth="1152.0" text="Симметричный обход: " textFill="#591b5b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="RevObh" layoutX="332.0" layoutY="491.0" prefHeight="20.0" prefWidth="1103.0" text="Обратный обход: " textFill="#002250">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="DeleteButton" layoutX="14.0" layoutY="302.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="25.0" prefWidth="111.0" text="Удалить узел" textFill="#410d0d" />
+            <TextField fx:id="TextF2" layoutX="37.0" layoutY="272.0" prefHeight="25.0" prefWidth="66.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
